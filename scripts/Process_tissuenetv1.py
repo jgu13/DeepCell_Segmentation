@@ -6,5 +6,8 @@ tissuenet_train_path = "/home/claris/projects/def-watsoni2/claris/python_project
 tissuenet_train = np.load(tissuenet_train_path)
 X = tissuenet_train['X'][:,...,0][...,np.newaxis]
 y = tissuenet_train['y'][:,...,0][...,np.newaxis]
-np.save("/home/claris/projects/def-watsoni2/claris/python_projects/deepcell-tf/data/tissuenet/X.npy", X)
-np.save("/home/claris/projects/def-watsoni2/claris/python_projects/deepcell-tf/data/tissuenet/y.npy", y)
+sample_inds = np.random.randint(low=0, high=X.shape[0], size=int(0.1*X.shape[0]))
+sample_X = X[sample_inds,...,:]
+sample_y = y[sample_inds,...,:]
+np.save("/home/claris/projects/def-watsoni2/claris/python_projects/deepcell-tf/data/minitest/X.npy", sample_X)
+np.save("/home/claris/projects/def-watsoni2/claris/python_projects/deepcell-tf/data/minitest/y.npy", sample_y)
