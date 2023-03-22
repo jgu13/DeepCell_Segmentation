@@ -15,9 +15,9 @@
         "outer_distance": 1,  
         "fgbg": 2
     },
-    "data_dir": "/home/claris/projects/def-watsoni2/claris/python_projects/deepcell-tf/data/tissuenet",
+    "data_dir": "/home/claris/projects/def-watsoni2/claris/python_projects/deepcell-tf/data/minitest",
     "model_dir": "/home/claris/projects/def-watsoni2/claris/python_projects/deepcell-tf/models",
-    "log_dir": "/home/claris/projects/def-watsoni2/claris/python_projects/deepcell-tf/logs/tissuenet_test",
+    "log_dir": "/home/claris/projects/def-watsoni2/claris/python_projects/deepcell-tf/logs/minitest",
     "results_dir": "/home/claris/projects/def-watsoni2/claris/python_projects/deepcell-tf/exps/test1",
     "detect": ""
 }
