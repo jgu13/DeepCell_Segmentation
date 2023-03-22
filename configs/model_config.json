@@ -1,0 +1,23 @@
+{
+    "model_name": "watershed_centroid_nuclear_general_std",
+    "n_epoch": 1,
+    "train_size": 0.8,
+    "test_size": 0.1,
+    "norm_method": "whole_image",
+    "lr": 1e-4,
+    "optimizer": "Adam",
+    "decay": 0.99, 
+    "clip_norm": 0.001,
+    "batch_size": 1,
+    "min_objects": 3,
+    "classes": {
+        "inner_distance": 1,
+        "outer_distance": 1,  
+        "fgbg": 2
+    },
+    "data_dir": "/home/claris/projects/def-watsoni2/claris/python_projects/deepcell-tf/data/tissuenet",
+    "model_dir": "/home/claris/projects/def-watsoni2/claris/python_projects/deepcell-tf/models",
+    "log_dir": "/home/claris/projects/def-watsoni2/claris/python_projects/deepcell-tf/logs/tissuenet_test",
+    "results_dir": "/home/claris/projects/def-watsoni2/claris/python_projects/deepcell-tf/exps/test1",
+    "detect": ""
+}
